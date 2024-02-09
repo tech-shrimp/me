@@ -1,6 +1,6 @@
-# 名字长度 2-7 的自然数
 import random
 
+# 名字长度 2-7 的自然数
 name_length = 2
 # 南方1 北方2 分不清3
 north_south = 1
