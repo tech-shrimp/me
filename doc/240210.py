@@ -45,7 +45,7 @@ for _ in range(gender):
 print(cards)
 # [4, 3, 1, 4, 1, 2]
 
-print("见证")
+print("见证奇迹的时刻")
 for _ in range(7):
     cards.append(cards.pop(0))
 print(cards)
