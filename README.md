@@ -5,7 +5,9 @@
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-|盘点AI大模型接入微信的方法，全网最全最细喂饭级教程 |  |[文字版](/doc/240627.md)|项目地址： [https://github.com/zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)|
+|双域名白嫖Cloudflare优选IP，最优CDN给自己网站加速，尽情享受CF免费服务 | [视频](https://www.bilibili.com/video/BV1SM4m1176E/) |[文字版](https://www.bilibili.com/read/cv35968646/)||
+|白嫖Cloudflare无限多企业邮箱，可收发邮件 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](https://www.bilibili.com/read/cv35969252/)||
+|盘点AI大模型接入微信的方法，全网最全最细喂饭级教程 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](/doc/240627.md)|项目地址： [https://github.com/zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)|
 |一个视频解决Docker安装, Pull, 找镜像等难题，停服风波后，Docker怎么办 | [视频](https://www.bilibili.com/video/BV1fS411A71Y/) |[文字版](https://github.com/tech-shrimp/docker_installer)|项目地址： [https://github.com/tech-shrimp/docker_installer](https://github.com/tech-shrimp/docker_installer)|
 |仅需一个Github账号，让文字在互联网中永生 超轻量级个人博客框架Gmeek | [视频](https://www.bilibili.com/video/BV1GM4m1m7ZD/) ||项目地址： [https://github.com/Meekdai/Gmeek](https://github.com/Meekdai/Gmeek)|
 |Cloudflare浑身都是宝，普通用户能白嫖多少服务？盘点cloudflare的免费功能 | [视频](https://www.douyin.com/video/7380007983696071977) |[文字版](https://www.bilibili.com/read/cv35424302/)|Cloudflare官网： [https://dash.cloudflare.com/](https://dash.cloudflare.com/)|
