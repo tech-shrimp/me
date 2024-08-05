@@ -5,7 +5,12 @@
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|cloudflare worker是什么？零基础教程，代码详解，本地开发环境 | [视频](https://v.douyin.com/iMoF5pq3/) || |
+|运行在Windows上的Linux子系统，WSL超详细教程 | [视频](https://www.bilibili.com/video/BV1tW42197za/) || |
+|windows为什么有两个命令行工具？cmd与powershell的区别 | [视频](https://www.bilibili.com/video/BV1Nx4y147n3/) |[文字版](https://www.bilibili.com/read/cv36709597/)| |
+|Youtube去广告，白嫖会员功能，Youtube开源客户端 | [视频](https://www.bilibili.com/video/BV16z421z7C3/) || [NewPipe项目下载](https://github.com/TeamNewPipe/NewPipe/releases)|
 |2024两种永久免费域名，手快有手慢无，可托管CF，零失败率，解决所有问题 | [视频](https://www.bilibili.com/video/BV1by411B7Ko/) |[文字版](https://www.bilibili.com/read/cv36206669/)| [免费域名1 register.us.kg](https://register.us.kg)<br>  [免费域名2 www.cloudns.net](https://www.cloudns.net) |
+|只用Github免费功能，上线仿抖音开源网站。使用Github Action+Pages免费部署网站 | [视频](https://www.bilibili.com/video/BV1sb421n7cB/) |[文字版](https://www.bilibili.com/read/cv36101985/)||
 |双域名白嫖Cloudflare优选IP，最优CDN给自己网站加速，尽情享受CF免费服务 | [视频](https://www.bilibili.com/video/BV1SM4m1176E/) |[文字版](https://www.bilibili.com/read/cv35968646/)||
 |白嫖Cloudflare无限多企业邮箱，可收发邮件 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](https://www.bilibili.com/read/cv35969252/)||
 |盘点AI大模型接入微信的方法，全网最全最细喂饭级教程 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](/doc/240627.md)|项目地址： [https://github.com/zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)|
