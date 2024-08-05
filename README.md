@@ -5,6 +5,7 @@
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|2024两种永久免费域名，手快有手慢无，可托管CF，零失败率，解决所有问题 | [视频](https://www.bilibili.com/video/BV1by411B7Ko/) |[文字版](https://www.bilibili.com/read/cv36206669/)| [免费域名1 register.us.kg](https://register.us.kg)<br>  [免费域名2 www.cloudns.net](https://www.cloudns.net) |
 |双域名白嫖Cloudflare优选IP，最优CDN给自己网站加速，尽情享受CF免费服务 | [视频](https://www.bilibili.com/video/BV1SM4m1176E/) |[文字版](https://www.bilibili.com/read/cv35968646/)||
 |白嫖Cloudflare无限多企业邮箱，可收发邮件 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](https://www.bilibili.com/read/cv35969252/)||
 |盘点AI大模型接入微信的方法，全网最全最细喂饭级教程 | [视频](https://www.bilibili.com/video/BV1JS411A7se/) |[文字版](/doc/240627.md)|项目地址： [https://github.com/zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)|
