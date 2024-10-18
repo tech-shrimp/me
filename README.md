@@ -1,11 +1,20 @@
 
 我是<b>技术爬爬虾</b>，分享好玩实用软件DIY的科技博主
-<br><br>B站，抖音，公众号，Youtube全网同名
-<br><br>这里是往期视频的资源列表
-<br><br>备用github地址:  [github.com/tech-shrimp/me](https://www.github.com/tech-shrimp/me)
+<br>B站，抖音，公众号，Youtube全网同名
+<br>这里是往期视频的资源列表
+<br>爬爬虾自制课程[《小白玩转Git/Github，全功能精讲》](https://www.bilibili.com/cheese/play/ss33708),已上架<b>[B站橱窗](https://www.bilibili.com/cheese/play/ss33708)，抖音专栏，微信视频号会员专区</b>
+<br>此页面的备用地址:  [github.com/tech-shrimp/me](https://www.github.com/tech-shrimp/me)
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|无痕模式能保护隐私么？ 浏览器指纹是什么？14种指纹背后的技术原理 | [视频](https://www.bilibili.com/video/BV1VmmNYAE53/) ||[开源库fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)<br>[ip数据库](https://ip-api.com) <br>[WebGL报告](https://browserleaks.com/webgl)<br>[Canvas指纹](https://browserleaks.com/canvas)<br>[音频指纹](https://audiofingerprint.openwpm.com/)|
+|https安全体系的最后两块拼图。 DNS污染？SNI阻断？全新网络协议保护隐私安全 | [视频](https://www.bilibili.com/video/BV1sT2pY8EEE/) ||[阿里云Doh](https://223.5.5.5/dns-query)<br>[ECH测试](https://defo.ie/ech-check.php)  |
+|正则表达式逃课攻略，3个现代化工具无痛掌握正则 | [视频](https://www.bilibili.com/video/BV1oc4TezEjT/) ||[regexr速查](https://regexr.com/) <br> [可视化](https://regex-vis.com/) <br> [ChatGPT](https://chatgptplus.cn/) |
+|盘点现代浏览器的各种神奇能力，功能令人惊讶😮 | [视频](https://www.bilibili.com/video/BV1BP4peXEty/) || |
+|国内免费使用Claude3.5的几种方法 | [视频](https://www.bilibili.com/video/BV1pH4y1F7wQ/) ||[大模型竞技场](https://lmarena.ai/)<br>[Claude公益站点](https://kelaode.ai/)<br>[Fuclaude](https://demo.fuclaude.com/) |
+|Mac虚拟机, 在Win的Linux子系统的Docker里运行MacOS，操作系统大套娃 | [视频](https://www.bilibili.com/video/BV1j2421o77K/) |[文字版](https://www.bilibili.com/read/cv39486209/)| |
+|宇宙级编辑器VSCode你真的会用么？提高生产力的巨量技巧 | [视频](https://www.bilibili.com/video/BV14Z421N7t6/) |[文字版](https://www.bilibili.com/read/cv39387501/)| |
+|世界上装机量最大的数据库SQLite，低调但不小众。 微信数据库 竟然长这样？ | [视频](https://www.bilibili.com/video/BV1Pw4m1k7uo/) |[文字版](https://www.bilibili.com/read/cv39359086/)| |
 |cloudflare worker是什么？零基础教程，代码详解，本地开发环境 | [视频](https://v.douyin.com/iMoF5pq3/) || |
 |运行在Windows上的Linux子系统，WSL超详细教程 | [视频](https://www.bilibili.com/video/BV1tW42197za/) || |
 |windows为什么有两个命令行工具？cmd与powershell的区别 | [视频](https://www.bilibili.com/video/BV1Nx4y147n3/) |[文字版](https://www.bilibili.com/read/cv36709597/)| |
