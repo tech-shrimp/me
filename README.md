@@ -8,10 +8,10 @@
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |盘点Github限量免费的高级功能，Action, Package, LFS, CodeSpace 都是什么？| [视频](https://www.bilibili.com/video/BV1Agm6YLEJL/) || |
-|一个软件搞定全球视频下载，8万star的开源视频下载器| [视频](https://www.bilibili.com/video/BV1A2DVY2EC5/) || |
+|一个软件搞定全球视频下载，8万star的开源视频下载器| [视频](https://www.bilibili.com/video/BV1A2DVY2EC5/) || 项目地址 [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)<br> ffmpeg官网：[https://ffmpeg.org](https://ffmpeg.org) |
 |开发一个AI行程助手，UP主只用了一下午| [视频](https://www.bilibili.com/video/BV1rRSnY8EfB/) || |
-|为什么Javascript的fetch需要等待两次？三分钟了解网络异步编程| [视频](https://www.bilibili.com/video/BV1LYSoYHEmo/) || |
-|没有公网IP？cloudflare优选IP，高速内网穿透，高速优选IP，高速内网穿透| [视频](https://www.bilibili.com/video/BV1PPy6YzE5C/) || |
+|为什么Javascript的fetch需要等待两次？三分钟了解网络异步编程| [视频](https://www.bilibili.com/video/BV1LYSoYHEmo/) || 演示项目地址：[https://github.com/tom-on-the-internet/fetch-demonstration](https://github.com/tom-on-the-internet/fetch-demonstration)|
+|没有公网IP？cloudflare优选IP，高速内网穿透，优选IP高速内网穿透| [视频](https://www.bilibili.com/video/BV1PPy6YzE5C/) || |
 |永远不要使用Git Pull, 直接使用Git Pull拉代码，被同事狠狠diss了！| [视频](https://www.bilibili.com/video/BV1McyYYtEX4/) || |
 |无痕模式能保护隐私么？ 浏览器指纹是什么？14种指纹背后的技术原理 | [视频](https://www.bilibili.com/video/BV1VmmNYAE53/) ||[开源库fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)<br>[ip数据库](https://ip-api.com) <br>[WebGL报告](https://browserleaks.com/webgl)<br>[Canvas指纹](https://browserleaks.com/canvas)<br>[音频指纹](https://audiofingerprint.openwpm.com/)|
 |https安全体系的最后两块拼图。 DNS污染？SNI阻断？全新网络协议保护隐私安全 | [视频](https://www.bilibili.com/video/BV1sT2pY8EEE/) ||[阿里云Doh](https://223.5.5.5/dns-query)<br>[ECH测试](https://defo.ie/ech-check.php)  |
