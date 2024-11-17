@@ -7,6 +7,7 @@
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|IPv6发展得怎样了？ 如何使用IPv6访问家庭内网设备，保护网络安全 | [视频](https://www.bilibili.com/video/BV1jiUrYgEMY/) || TrackerList: [https://github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection)<br> ddns-go：[https://github.com/jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) |
 |盘点Github限量免费的高级功能，Action, Package, LFS, CodeSpace 都是什么？| [视频](https://www.bilibili.com/video/BV1Agm6YLEJL/) || |
 |一个软件搞定全球视频下载，8万star的开源视频下载器| [视频](https://www.bilibili.com/video/BV1A2DVY2EC5/) || 项目地址 [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)<br> ffmpeg官网：[https://ffmpeg.org](https://ffmpeg.org) |
 |开发一个AI行程助手，UP主只用了一下午| [视频](https://www.bilibili.com/video/BV1rRSnY8EfB/) || |
