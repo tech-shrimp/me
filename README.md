@@ -2,17 +2,24 @@
 我是<b>技术爬爬虾</b>，分享好玩实用软件DIY的科技博主
 <br>B站，抖音，公众号，Youtube全网同名
 <br>这里是往期视频的资源列表
-<br>爬爬虾自制课程[《小白玩转Git/Github，全功能精讲》](https://www.bilibili.com/cheese/play/ss33708),已上架<b>[B站橱窗](https://www.bilibili.com/cheese/play/ss33708)，抖音专栏，微信视频号会员专区，Youtube会员频道</b>
+<br>爬爬虾自制课程[《小白玩转Git/Github，全功能精讲》](https://www.bilibili.com/cheese/play/ss33708),已上架<b>[B站橱窗](https://www.bilibili.com/cheese/play/ss33708)，抖音专栏，Youtube会员频道</b>， 如果Github连不上可以参考前几节试看部分
 <br>此页面的备用地址:  [github.com/tech-shrimp/me](https://www.github.com/tech-shrimp/me)
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|格局！小米Home Assistant官方集成，Docker安装HA，智能家居终极解决方案，小米智能设备接入HomeKit | [视频](https://www.bilibili.com/video/BV1d2kJYhEdK/) ||  小米官方集成： [https://github.com/XiaoMi/ha_xiaomi_home](https://github.com/XiaoMi/ha_xiaomi_home)<br> Docker安装教程： [https://github.com/tech-shrimp/docker_installer](https://github.com/tech-shrimp/docker_installer) <br> Home Assistant官网： [https://www.home-assistant.io/installation/linux](https://www.home-assistant.io/installation/linux)  |
+|四款开源开发工具，免费安全优雅好用，Tabby终端工具，Bruno测试工具，DBeaver数据库管理工具 | [视频](https://www.bilibili.com/video/BV13dBLYNErd/) || Tabby开源首页: [https://github.com/Eugeny/tabby](https://github.com/Eugeny/tabby)<br> Bruno开源地址: [https://github.com/usebruno/bruno](https://github.com/usebruno/bruno) <br> DBeaver开源地址: [https://github.com/dbeaver/dbeaver](https://github.com/dbeaver/dbeaver) <br> VSCode: [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+|两种免费防御DDoS攻击的实战攻略，详细教程演示 | [视频](https://www.bilibili.com/video/BV1d2kJYhEdK/) ||  Cloudflare官网: [https://dash.cloudflare.com/](https://dash.cloudflare.com/)  |
+|安装包体积减少91%！Tauri基础入门，下一代全平台开发框架，Tauri对比Electron有什么优势？ | [视频](https://www.bilibili.com/video/BV1WfqWY3EGg/) || Tauri官网: [https://tauri.app/](https://tauri.app/)<br> Github地址: [https://github.com/tauri-apps/tauri](https://github.com/tauri-apps/tauri) |
+|三行命令，免费申请https加密证书，一次配置，永久生效。NAS/家庭内网服务配置TLS加密，自建网站配置SSL/TLS加密 | [视频](https://www.bilibili.com/video/BV1UNzmYpEZz/) |[文字版](https://mp.weixin.qq.com/s/QKTD0w0V5Ah25L8oOxdqag)| 项目地址: [https://github.com/acmesh-official/acme.sh](https://github.com/acmesh-official/acme.sh) |
+|PDF转markdown，AI知识库绝配，科研文献整理必备，MinerU将PDF转化为机器可读格式的工具 | [视频](https://www.bilibili.com/video/BV1eqzBYzEd9/) || 项目地址: [https://github.com/opendatalab/MinerU](https://github.com/opendatalab/MinerU) <br> 官网演示： [ https://opendatalab.com/OpenSourceTools/Extractor/PDF]( https://opendatalab.com/OpenSourceTools/Extractor/PDF) |
+|连续登顶Github的信息聚合神器Follow 打破信息茧房，高效获取咨询。RSS技术是什么？ | [视频](https://www.bilibili.com/video/BV1S2UDYWEKs/) || Follow官网: [https://follow.is/](https://follow.is/) <br> Github地址: [https://github.com/RSSNext/Follow](https://github.com/RSSNext/Follow) |
 |IPv6发展得怎样了？ 如何使用IPv6访问家庭内网设备，保护网络安全 | [视频](https://www.bilibili.com/video/BV1jiUrYgEMY/) || TrackerList: [https://github.com/XIU2/TrackersListCollection](https://github.com/XIU2/TrackersListCollection)<br> ddns-go：[https://github.com/jeessy2/ddns-go](https://github.com/jeessy2/ddns-go) |
 |盘点Github限量免费的高级功能，Action, Package, LFS, CodeSpace 都是什么？| [视频](https://www.bilibili.com/video/BV1Agm6YLEJL/) || |
 |一个软件搞定全球视频下载，8万star的开源视频下载器| [视频](https://www.bilibili.com/video/BV1A2DVY2EC5/) || 项目地址 [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)<br> ffmpeg官网：[https://ffmpeg.org](https://ffmpeg.org) |
 |开发一个AI行程助手，UP主只用了一下午| [视频](https://www.bilibili.com/video/BV1rRSnY8EfB/) || |
 |为什么Javascript的fetch需要等待两次？三分钟了解网络异步编程| [视频](https://www.bilibili.com/video/BV1LYSoYHEmo/) || 演示项目地址：[https://github.com/tom-on-the-internet/fetch-demonstration](https://github.com/tom-on-the-internet/fetch-demonstration)|
-|没有公网IP？cloudflare优选IP，高速内网穿透，优选IP高速内网穿透| [视频](https://www.bilibili.com/video/BV1PPy6YzE5C/) || |
+|没有公网IP？cloudflare优选IP，高速内网穿透，优选IP高速内网穿透| [视频](https://www.bilibili.com/video/BV1PPy6YzE5C/) |[文字版](https://mp.weixin.qq.com/s/m4JoAuu2kb891nZ_uyVK8Q)| |
 |永远不要使用Git Pull, 直接使用Git Pull拉代码，被同事狠狠diss了！| [视频](https://www.bilibili.com/video/BV1McyYYtEX4/) || |
 |无痕模式能保护隐私么？ 浏览器指纹是什么？14种指纹背后的技术原理 | [视频](https://www.bilibili.com/video/BV1VmmNYAE53/) ||[开源库fingerprintjs](https://github.com/fingerprintjs/fingerprintjs)<br>[ip数据库](https://ip-api.com) <br>[WebGL报告](https://browserleaks.com/webgl)<br>[Canvas指纹](https://browserleaks.com/canvas)<br>[音频指纹](https://audiofingerprint.openwpm.com/)|
 |https安全体系的最后两块拼图。 DNS污染？SNI阻断？全新网络协议保护隐私安全 | [视频](https://www.bilibili.com/video/BV1sT2pY8EEE/) ||[阿里云Doh](https://223.5.5.5/dns-query)<br>[ECH测试](https://defo.ie/ech-check.php)  |
