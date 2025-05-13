@@ -7,6 +7,34 @@
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
 |--- | --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|最强开源AI工作流n8n，上千插件+模板，效率起飞| || [HackerNew工作流](/n8n/hacker_new_to_email.json)<br>[双向MCP工作流](/n8n/dual_way_mcp.json)<br> [社区MCP工作流](/n8n/community_mcp.json)<br>[n8n Github首页](https://github.com/n8n-io/n8n)<br>[HackerNews RSS](https://hnrss.github.io/)<br>[FireCrawl](https://www.firecrawl.dev/)<br>[地图开放平台](https://lbs.baidu.com/apiconsole/center)<br>[百度地图MCP](https://lbsyun.baidu.com/faq/api?title=mcpserver/base)| 
+|免费容器部署平台，玩转AI客户端，工作流，alist， 数据库....| [视频](https://www.bilibili.com/video/BV1zKVtzFEQH/) ||  |
+|免费域名能干什么？CDN，个人网站，访问家庭内网等 | [视频](https://www.bilibili.com/video/BV1uAVLzCEmH/) ||  |
+|全球最强开源模型Qwen3，全场景实测+本地部署教程 | [视频](https://www.bilibili.com/video/BV12ZG1zWEEh/) ||  |
+|MCP+智能体，开发AI版“你画我猜”效率翻倍 | [视频](https://www.bilibili.com/video/BV12XL8zpEfp/) ||  |
+|独立开发者省钱之穷鬼套餐，从零开始完整实战，不花一分钱上线完整应用 | [视频](https://www.bilibili.com/video/BV1kY5XzrE6L/) ||  |
+|CherryStudio搭建本地AI知识库，三大痛点与进阶方案 | [视频](https://www.bilibili.com/video/BV1NMoFYoEsb/) ||  |
+|无需本地部署，5分钟在云端搭建MCP智能体 | [视频](https://www.bilibili.com/video/BV1sRdDYeEbH/) ||  |
+|开挂体验+1，通过MCP光速建站，毫秒级访问 | [视频](https://www.bilibili.com/video/BV157dJYbEti/) ||  |
+|一句话命令AI操作浏览器替我打工，Browser Use原理+实战 | [视频](https://www.bilibili.com/video/BV1vZfKYeEDk/) ||  |
+|一口气介绍15种MCP工具，CherryStudio配置MCP | [视频](https://www.bilibili.com/video/BV1MjZ5YrESn/) ||  |
+|我被AI智能体整破防！如何像搭积木一样构建Agent | [视频](https://www.bilibili.com/video/BV1F7XzYJEYd/) ||  |
+|MCP是怎么对接大模型的？抓取AI提示词，拆解MCP的底层原理 | [视频](https://www.bilibili.com/video/BV1P3XTYPEJm/) ||  |
+|MCP是啥？技术原理是什么？一个视频搞懂MCP的一切。Windows系统配置MCP，Cursor Cline使用MCP | [视频](https://www.bilibili.com/video/BV1AnQNYxEsy/) ||  |
+|两款开源版Manus很强么？本地部署教程+对比实测   OpenManus与Owl效果怎么样 | [视频](https://www.bilibili.com/video/BV1XpRsYiEe5/) ||  |
+|https真安全么？ 抓包解密https的两种原理+实战  开源软件mitmproxy与wireshark如何抓包https | [视频](https://www.bilibili.com/video/BV1w7ADeLEPE/) ||  |
+|Cursor太贵？分享三个免费AI编程方案+海量编程技巧【如何看待AI编程】 | [视频](https://www.bilibili.com/video/BV1b5AeeGEFc/) ||  |
+|顶级开源AI视觉模型，全场景实战+本地部署教程 | [视频](https://www.bilibili.com/video/BV1C8KpeVEAt/) ||  |
+|最快最稳的DeepSeek，榨干微软字节两大厂，解锁知识库，联网搜索等高级功能 | [视频](https://www.bilibili.com/video/BV1NCNPeZENF/) ||  |
+|DeepSeek R1 满血免费 API，昇腾芯片+DeepSeek国产AI表现如何 | [视频](https://www.bilibili.com/video/BV1T2FreXETz/) ||  |
+|不要本地部署DeepSeek了，免费光速版API，70B蒸馏模型 | [视频](https://www.bilibili.com/video/BV1EHFueSEZQ/) ||  |
+|DeepSeek API 到底怎么用？5大场景实战评测，AI知识库，AI翻译，AI编程 | [视频](https://www.bilibili.com/video/BV1aWFWeyE6D/) ||  |
+|NodeJs杀手？Deno从入门到实战，免费部署web应用 | [视频](https://www.bilibili.com/video/BV1gpffYuEPS/) ||  |
+|全自动HTTPS加密，开箱即用，Caddy基础入门，反向代理，负载均衡，网站托管全流程 | [视频](https://www.bilibili.com/video/BV1z5w6ekE1L/) ||  |
+|10秒部署Gemini多模态AI应用+API中转，不限地区开箱即用 | [视频](https://www.bilibili.com/video/BV1jxrvYMEKT/) ||  |
+|Cloudflare中转顶级大模型API，国内免费爽用，Gemini编程，音视频，多模态能力测试 | [视频](https://www.bilibili.com/video/BV1xS66YAEwm/) ||  |
+|网络顶级掠食者 Wireshark抓包从入门到实战 | [视频](https://www.bilibili.com/video/BV12X6gYUEqA/) ||  |
+|开源PDF翻译神器，科研论文必备！本地部署+原理介绍 ，PDF翻译成中文 | [视频](https://www.bilibili.com/video/BV1MHk9Y2Ef7/) ||  |
 |格局！小米Home Assistant官方集成，Docker安装HA，智能家居终极解决方案，小米智能设备接入HomeKit | [视频](https://www.bilibili.com/video/BV1d2kJYhEdK/) ||  小米官方集成： [https://github.com/XiaoMi/ha_xiaomi_home](https://github.com/XiaoMi/ha_xiaomi_home)<br> Docker安装教程： [https://github.com/tech-shrimp/docker_installer](https://github.com/tech-shrimp/docker_installer) <br> Home Assistant官网： [https://www.home-assistant.io/installation/linux](https://www.home-assistant.io/installation/linux)  |
 |四款开源开发工具，免费安全优雅好用，Tabby终端工具，Bruno测试工具，DBeaver数据库管理工具 | [视频](https://www.bilibili.com/video/BV13dBLYNErd/) || Tabby开源首页: [https://github.com/Eugeny/tabby](https://github.com/Eugeny/tabby)<br> Bruno开源地址: [https://github.com/usebruno/bruno](https://github.com/usebruno/bruno) <br> DBeaver开源地址: [https://github.com/dbeaver/dbeaver](https://github.com/dbeaver/dbeaver) <br> VSCode: [https://code.visualstudio.com/](https://code.visualstudio.com/) |
 |两种免费防御DDoS攻击的实战攻略，详细教程演示 | [视频](https://www.bilibili.com/video/BV1d2kJYhEdK/) ||  Cloudflare官网: [https://dash.cloudflare.com/](https://dash.cloudflare.com/)  |

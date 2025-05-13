@@ -1,0 +1,147 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9f6e3f02-f261-44f8-a07d-e48a262a2cb4",
+      "name": "When chat message received",
+      "webhookId": "5ea121e4-2660-44ec-a2bd-b3cae6fbb70e"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        220,
+        0
+      ],
+      "id": "68ccd920-7919-4969-963d-ef2ea9cb4f33",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        220,
+        180
+      ],
+      "id": "61446f34-ca37-4a50-8fcc-b02250450992",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "rL0xgY92Lv6pf6VU",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-mcp.mcpClientTool",
+      "typeVersion": 1,
+      "position": [
+        340,
+        220
+      ],
+      "id": "d6b9895b-0b84-42aa-a6af-ab9f42b8d14d",
+      "name": "MCP Client",
+      "credentials": {
+        "mcpClientApi": {
+          "id": "ckyKQQVZnWMFrEeT",
+          "name": "MCP Client (STDIO) account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeTool",
+        "toolName": "={{ $fromAI('toolname') }}",
+        "toolParameters": "={{ $fromAI('Tool_Parameters', '' , 'json') }}"
+      },
+      "type": "n8n-nodes-mcp.mcpClientTool",
+      "typeVersion": 1,
+      "position": [
+        480,
+        220
+      ],
+      "id": "b5b4a337-90cf-49ab-812a-fde9807510dd",
+      "name": "MCP Client1",
+      "credentials": {
+        "mcpClientApi": {
+          "id": "ckyKQQVZnWMFrEeT",
+          "name": "MCP Client (STDIO) account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client1": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "cff1ceb6-f011-44b9-91b2-63b9e7914b5b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cc6dc3cfc3fbfcd06da8af92309caf8c6469a46f395f6a03e1bf94d7327a23b3"
+  },
+  "id": "HVjEARDjSBn8mV1p",
+  "tags": []
+}

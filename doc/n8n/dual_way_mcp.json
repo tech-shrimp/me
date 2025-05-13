@@ -1,0 +1,208 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        0,
+        -120
+      ],
+      "id": "5d4a99ca-2be4-42a5-b2dd-85d88234e223",
+      "name": "When chat message received",
+      "webhookId": "b1cd4938-07c6-404f-b811-6455c9bb1b6a"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        220,
+        0
+      ],
+      "id": "872cf90f-d89d-426d-a758-f7edd63e3c33",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        248,
+        220
+      ],
+      "id": "80d2b027-5bd8-4d34-9eea-fdb299fba2fc",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "rL0xgY92Lv6pf6VU",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sseEndpoint": "https://mcp.map.baidu.com/sse?ak=oQtLKH5iWxTAqJpk0tnsHeMhDqD0xjlM"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpClientTool",
+      "typeVersion": 1,
+      "position": [
+        368,
+        220
+      ],
+      "id": "712d7976-c7e5-45c3-a6aa-d8924003a0f0",
+      "name": "MCP Client"
+    },
+    {
+      "parameters": {
+        "path": "62ac2b66-8c9b-44fe-8201-2d1c0605ba21"
+      },
+      "type": "@n8n/n8n-nodes-langchain.mcpTrigger",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        220
+      ],
+      "id": "258134f3-6312-4190-a5f4-fb12587e82e9",
+      "name": "MCP Server Trigger",
+      "webhookId": "62ac2b66-8c9b-44fe-8201-2d1c0605ba21"
+    },
+    {
+      "parameters": {
+        "description": "地图MCP，用来规划路线等",
+        "workflowId": {
+          "__rl": true,
+          "value": "xv9zlRTAN5OBXQLt",
+          "mode": "list",
+          "cachedResultName": "My workflow 2"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "chatInput": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('chatInput', ``, 'string') }}"
+          },
+          "matchingColumns": [
+            "chatInput"
+          ],
+          "schema": [
+            {
+              "id": "chatInput",
+              "displayName": "chatInput",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        -140,
+        440
+      ],
+      "id": "097838e6-c0da-4cdc-a51c-fd5e521bdfc7",
+      "name": "Call n8n Workflow Tool"
+    },
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {
+              "name": "chatInput"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -20,
+        40
+      ],
+      "id": "3add761e-f73e-4ab1-ab8a-cf3247ba58d0",
+      "name": "When Executed by Another Workflow"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Client": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call n8n Workflow Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "MCP Server Trigger",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Executed by Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "0130b2af-f55c-4c49-bcfa-e625cda4bac8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cc6dc3cfc3fbfcd06da8af92309caf8c6469a46f395f6a03e1bf94d7327a23b3"
+  },
+  "id": "xv9zlRTAN5OBXQLt",
+  "tags": []
+}

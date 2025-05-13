@@ -1,0 +1,289 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://hnrss.org/newest?points=10",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        0
+      ],
+      "id": "b4f1fc53-f4ca-481e-baaf-1866fc178c3c",
+      "name": "RSS Read"
+    },
+    {
+      "parameters": {
+        "resource": "Default",
+        "operation": "Scrape A Url And Get Its Content",
+        "url": "={{ $json.link }}",
+        "requestOptions": {}
+      },
+      "type": "n8n-nodes-firecrawl.fireCrawl",
+      "typeVersion": 1,
+      "position": [
+        660,
+        0
+      ],
+      "id": "abc56591-b5cb-4247-b9bf-c4bc015c6595",
+      "name": "FireCrawl",
+      "credentials": {
+        "fireCrawlApi": {
+          "id": "zrV6S3Ylg7kpsVkF",
+          "name": "FireCrawl account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "maxItems": 3
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        440,
+        0
+      ],
+      "id": "a73fbe4d-c392-417f-afa0-55fac382a0ac",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "options": {
+          "systemMessage": "你是一个新闻助手，我需要你把从网站上爬取的数据，整理成一个新闻简报。"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        880,
+        0
+      ],
+      "id": "721b7d4b-3237-4abd-9ba5-fd940a263184",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        920,
+        220
+      ],
+      "id": "c32782f5-f267-4639-91a0-058286bd2961",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "rL0xgY92Lv6pf6VU",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "output"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1240,
+        0
+      ],
+      "id": "d2bf8d38-36f4-44d8-8d48-6aa33960550c",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "mode": "markdownToHtml",
+        "markdown": "={{ $json.output.join(\"\\n\\n\") }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.markdown",
+      "typeVersion": 1,
+      "position": [
+        1460,
+        0
+      ],
+      "id": "2d4192c2-32bb-4670-b7c4-0104b80ea757",
+      "name": "Markdown"
+    },
+    {
+      "parameters": {
+        "fromEmail": "939178127@qq.com",
+        "toEmail": "tech-shrimp@outlook.com",
+        "subject": "新闻简报",
+        "html": "={{ $json.data }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1680,
+        0
+      ],
+      "id": "9e9fccba-9a9e-43a4-92d8-40f0aa8317dd",
+      "name": "Send Email",
+      "webhookId": "6cf9cba8-50db-4d03-8f26-1cddf1ff3fae",
+      "credentials": {
+        "smtp": {
+          "id": "SkoMFAjgo8tMiMbI",
+          "name": "SMTP account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 4
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8edecec8-2522-47ef-a362-1bd14b8c9ed4",
+      "name": "Schedule Trigger"
+    }
+  ],
+  "pinData": {
+    "AI Agent": [
+      {
+        "json": {
+          "output": "**新闻简报：西方国家对加沙局势的沉默引发批评**  \n\n**标题**：西方国家对加沙局势的“可耻沉默”  \n\n**来源**：英国《金融时报》（Financial Times）  \n\n**主要内容**：  \n- 文章批评美国及欧洲盟友在加沙冲突中未能有效约束以色列总理内塔尼亚胡（Benjamin Netanyahu），导致局势持续恶化。  \n- 作者认为，西方国家在巴以冲突中的不作为或沉默态度令人失望，呼吁采取更强有力的外交干预措施。  \n- 报道配图显示加沙地带的冲突场景，凸显人道主义危机的严重性。  \n\n**背景**：  \n近期巴以冲突持续升级，加沙地带平民伤亡加剧，国际社会对以色列军事行动的批评增多，但西方国家尚未采取实质性行动施压以方。  \n\n**订阅提示**：  \n本文为《金融时报》付费内容，完整报道需订阅后阅读。  \n\n**关键词**：加沙冲突、西方国家、内塔尼亚胡、外交干预、人道主义危机  \n\n（简报基于网页元数据整理，具体内容以原文为准。）"
+        }
+      },
+      {
+        "json": {
+          "output": "**新闻简报：2038年时间漏洞危机引发关注**\n\n**标题**：全球技术专家发起\"Epochalypse项目\"应对2038年时间漏洞危机  \n\n**主要内容**：  \n1. **项目背景**：由技术专家发起的\"Epochalypse项目\"正致力于提高公众对2038年时间漏洞（2038 bug）的认知，并争取在问题爆发前找到解决方案。  \n\n2. **问题严重性**：2038年1月19日，32位系统的Unix时间戳将溢出，可能导致全球计算机系统出现类似\"千年虫\"的大规模故障，影响金融、交通、通信等关键基础设施。  \n\n3. **项目目标**：该项目通过网站(epochalypse-project.org)汇集全球技术力量，协调解决方案，呼吁企业和开发者提前升级系统架构。  \n\n4. **时间紧迫性**：距离潜在危机只剩不到15年时间，项目团队强调现在是解决问题的关键窗口期。  \n\n**专家建议**：  \n- 企业应尽快评估系统脆弱性  \n- 优先升级依赖32位时间戳的遗留系统  \n- 参与全球协作解决这一跨行业挑战  \n\n**相关链接**：https://epochalypse-project.org/  \n\n（简报基于epochalypse-project.org官网信息整理）"
+        }
+      },
+      {
+        "json": {
+          "output": "**新闻简报：IBM调查显示企业AI投资多受FOMO驱动而非实际回报**\n\n**标题**：大多数AI支出由FOMO驱动而非ROI，CEO们向IBM透露\n\n**来源**：The Register  \n**日期**：2025年5月6日  \n**链接**：[原文链接](https://www.theregister.com/2025/05/06/ibm_ai_investments/)  \n\n**核心内容**：  \n根据IBM最新调查，全球企业高管承认，当前人工智能(AI)领域的投资热潮主要受\"害怕错过\"(FOMO)心理驱动，而非基于实际投资回报率(ROI)的理性决策。数据显示，目前仅有约25%的AI投资获得了预期回报。\n\n**关键发现**：  \n1. 企业AI投资中，每4个项目只有1个能实现预期收益  \n2. FOMO(害怕错过)是推动AI支出的主要因素  \n3. 多数CEO表示面临保持AI竞争力的压力  \n\n**行业影响**：  \n该调查结果揭示了当前AI投资热潮背后的非理性因素，可能引发企业对AI战略的重新评估。专家建议企业应更注重实际应用场景和可衡量的商业价值，而非盲目跟风。\n\n**延伸阅读**：  \n报告还指出，成功的AI项目往往具有清晰的业务目标、可靠的数据基础和可量化的KPI，这些因素比单纯的技术先进性更能确保投资回报。\n\n**备注**：该调查由IBM在2025年第一季度进行，覆盖全球多个行业的企业决策者。"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "RSS Read": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "FireCrawl",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FireCrawl": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Markdown": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS Read",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "994ba9e8-d518-48c9-87f1-b4fa80a0996b",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cc6dc3cfc3fbfcd06da8af92309caf8c6469a46f395f6a03e1bf94d7327a23b3"
+  },
+  "id": "RTqWJF9simyvdazZ",
+  "tags": []
+}
