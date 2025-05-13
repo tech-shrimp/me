@@ -2,7 +2,7 @@
 我是<b>技术爬爬虾</b>，分享好玩实用软件DIY的科技博主
 <br>B站，抖音，公众号，Youtube全网同名
 <br>这里是往期视频的资源列表
-<br>爬爬虾自制课程[《小白玩转Git/Github，全功能精讲》](https://www.bilibili.com/cheese/play/ss33708),已上架<b>[B站橱窗](https://www.bilibili.com/cheese/play/ss33708)，抖音专栏，Youtube会员频道</b>， 如果Github连不上可以参考前几节试看部分
+<br>爬爬虾自制课程[《小白玩转Git/Github，全功能精讲》](https://www.bilibili.com/cheese/play/ss33708)
 <br>此页面的备用地址:  [github.com/tech-shrimp/me](https://www.github.com/tech-shrimp/me)
 
 | **标题** | **视频** | **文字版** | **资源/项目地址**                                                                                                                                                                                                                                                                                                                                                                                        |
